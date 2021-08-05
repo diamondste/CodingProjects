@@ -1,0 +1,20 @@
+//Problem 1
+Output: Tesla , Mercedes
+Error: No error 
+
+//Problem 2
+Output: Elon 
+Error: console.log(name) will be empty becuase nothing is defined
+
+//Problem 3 
+Output: 12345
+Error console.log(hashedPassword) will be undefined becuase hasn't been 
+defined yet 
+
+//Problem 4
+Output: false ( 2 doesn't equal 5), true (2 does equal 2)
+Error: No error
+
+//Problem 5 
+Output: value, [1, 5, 1, 8, 3, 3], 1, 5
+Error: No error 
