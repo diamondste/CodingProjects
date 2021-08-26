@@ -1,2 +1,2 @@
-# MERN
-Projects done in MERN Stack at Coding Dojo 
+# Coding Project 
+Projects done in at Coding Dojo 
