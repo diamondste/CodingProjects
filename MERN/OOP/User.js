@@ -17,6 +17,16 @@ class User {
         return this;
     }
 
+    transferMoney(otherUser, amount){
+        otherUser.makeDeposit(amount)
+        this.accountBalance -= amount
+        console.log(otherUser)
+        console.log(amount)
+        otherUser.displayBalance()
+        console.log(this)
+        this.displayBalance()
+    }
+
 }
 
 const tom = new User("Tom Cat", "tomcat@cat.com")
@@ -29,3 +39,4 @@ jerry.makeDeposit(200).makeDeposit(100).makeWithdrawal(100).makeWithdrawal(50).d
 
 piggy.makeDeposit(400).makeWithdrawal(100).makeWithdrawal(50).makeWithdrawal(80).displayBalance()
 
+tom.transferMoney(piggy, 100)
