@@ -7,18 +7,17 @@ class Ninja {
 
     }
     sayName(){
-        console.log("Ninja: " + this.name)
+        console.log("Name: " + this.name)
         return this 
     }
     showStats(){
-        console.log("Ninja: " + this.name, "Health: " + this.health
+        console.log("Show Stats: ","Name: " + this.name, "Health: " + this.health
         , "Speed: " + this.speed , "Strength: " + this.strength)
         return this
     }
 
     drinkSake(){
         this.health += 10
-        console.log(this.health)
         return this
     }
 }
@@ -28,3 +27,18 @@ const ninja1 = new Ninja("Diamond", 100)
 ninja1.sayName()
 ninja1.showStats()
 ninja1.drinkSake()
+
+class Sensei extends Ninja{
+    constructor(name){
+        super(name, 200, 10, 10)
+        this.wisdom = 10
+    }
+    speakWisdom(){
+        this.drinkSake()
+        console.log("Wax on and Wax off")
+    }
+}
+
+const superSensei = new Sensei("Master Splinter")
+superSensei.speakWisdom()
+superSensei.showStats()
