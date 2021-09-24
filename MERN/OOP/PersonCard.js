@@ -29,7 +29,6 @@ class PersonCard extends Component {
                 <p>
                     Hair Color:  {this.props.hairColor}
                 </p>
-                <button onClick={updateHandler}>Birthday Button for {this.props.firstName} {this.props.lastName}</button>
             </div>
     
         );
