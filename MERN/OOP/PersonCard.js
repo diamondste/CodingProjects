@@ -6,7 +6,7 @@ class PersonCard extends Component {
         this.state = {
             firstName: "",
             lastName: "",
-            age: 1,
+            age: "",
             hairColor: ""
             
 
