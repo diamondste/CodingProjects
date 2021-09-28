@@ -31,7 +31,7 @@ class User {
 
 const tom = new User("Tom Cat", "tomcat@cat.com")
 const jerry = new User("Jerry Mouse", "jerryMouset@mouse.com")
-const piggy = new User("Ms Piggy", "lovekermit@piggy.com")
+const piggy = new User("Piggy", "lovekermit@piggy.com")
 
 tom.makeDeposit(100).makeDeposit(200).makeDeposit(400).makeWithdrawal(100).displayBalance()
 
